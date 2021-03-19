@@ -1,4 +1,4 @@
-# Python-API-Challenge
+# weather-api-stats
 Created vizualizations of the weather on a given day for 500+ randomly selected cities around the world and analyzed the resulting observations.
 
 Data Analysis:
