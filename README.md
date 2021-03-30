@@ -187,11 +187,16 @@ fig
 
 ### Hotel Map
 ```
-# Filter cities by ideal weather conditions
-ideal_cities = cities_data.loc[((cities_data["Max Temp"] >= 26) & (cities_data["Wind Speed"] < 4.47)
-                                & (cities_data["Humidity"] <= 50)) ]
-# Drop null values
-ideal_cities.dropna()
+# Filter cities by ideal weather conditions and drop any null values
+ideal_cities = cities_data.loc[(cities_data["Max Temp"] >= 26) & (cities_data["Wind Speed"] < 4.47) \
+                                & (cities_data["Humidity"] <= 50)].dropna()
+ideal_cities
+```
+```
+# Create DataFrame called hotel_df to store hotel names along with city, country and coordinates
+hotel_df = ideal_cities[["City", "Country", "Lat", "Lng"]].copy()
+hotel_df["Hotel Name"] = ""
+hotel_df
 ```
 ```
 # Store filtered dataframe into new variable 
