@@ -3,6 +3,8 @@
 ## Description
 Used the OpenWeatherMap API, Google Maps API, Pandas, NumPy, MatPlotLib, and SciPy Statistics to create and analyze multiple vizualizations of the weather data on a given day for 500+ randomly selected cities from around the world.
 
+![alt_text](https://github.com/nickmangarella/weather-api-stats/blob/master/output_data/gmap.PNG)
+
 ## WeatherPy
 ```
 # Dependencies and Setup
